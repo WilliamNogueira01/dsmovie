@@ -8,30 +8,21 @@ function Listing() {
 
             <div className="container">
                 <div className="row">
-                    <div className="col-sm-6 col-lg-4 colg-xl-3 mb-3">
-                        <MovieCard />
 
-                    </div>
-                    <div className="col-sm-6 col-lg-4 colg-xl-3 mb-3">
-                        <MovieCard />
+                    {(() => {
+                        const options = [];
 
-                    </div>
-                    <div className="col-sm-6 col-lg-4 colg-xl-3 mb-3">
-                        <MovieCard />
+                        for (let i = 0; i < 2; i++) {
+                            options.push(
+                            <div className="col-sm-6 col-lg-4 colg-xl-3 mb-3">
+                                <MovieCard />
 
-                    </div>
-                    <div className="col-sm-6 col-lg-4 colg-xl-3 mb-3">
-                        <MovieCard />
+                            </div>)
+                        }
 
-                    </div>
-                    <div className="col-sm-6 col-lg-4 colg-xl-3 mb-3">
-                        <MovieCard />
+                        return options;
+                    })()}
 
-                    </div>
-                    <div className="col-sm-6 col-lg-4 colg-xl-3 mb-3">
-                        <MovieCard />
-
-                    </div>
                 </div>
             </div>
         </>

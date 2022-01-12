@@ -2,7 +2,9 @@
 import { ReactComponent as GithubIcon } from 'assets/img/github.svg';
 import './styles.css';
 
-function Navbar() {
+
+export default function Navbar() {
+    
     return (<header>
         <nav className="container">
             <div className="dsmovie-nav-content">
@@ -18,5 +20,3 @@ function Navbar() {
     </header>
     );
 }
-
-export default Navbar;
