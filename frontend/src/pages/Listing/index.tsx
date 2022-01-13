@@ -12,7 +12,7 @@ function Listing() {
                     {(() => {
                         const options = [];
 
-                        for (let i = 0; i < 2; i++) {
+                        for (let i = 0; i < 10; i++) {
                             options.push(
                             <div className="col-sm-6 col-lg-4 colg-xl-3 mb-3">
                                 <MovieCard />
